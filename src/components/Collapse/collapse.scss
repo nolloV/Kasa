@@ -1,0 +1,46 @@
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.3125rem;
+  background-color: #ff6060;
+  margin-bottom: 1.88rem;
+  width: 80%;
+
+  .collapse-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 142.6%;
+    padding: 0.7rem;
+
+    // .arrow {
+    //   transition: transform 0.3s ease-in-out;
+    // }
+
+    &.open {
+      .arrow {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .collapse-content {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    font-size: 1rem;
+    padding: 0rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
+
+    &.open {
+      max-height: 20rem;
+      padding: 1rem;
+    }
+  }
+}
