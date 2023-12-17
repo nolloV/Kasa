@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 3rem;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
+
   &__previous {
     width: 2.9175rem;
     height: 4.95rem;
@@ -10,6 +14,11 @@
     position: absolute;
     left: 6rem;
     bottom: 22rem;
+    @media screen and (max-width: 768px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      left: 3rem;
+    }
   }
   &__next {
     width: 2.9175rem;
@@ -18,6 +27,11 @@
     position: absolute;
     right: 6rem;
     bottom: 22rem;
+    @media screen and (max-width: 768px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 3rem;
+    }
   }
   &__img {
     border-radius: 1.5625rem;
@@ -31,5 +45,8 @@
     position: absolute;
     bottom: 12rem;
     font-size: 1.125rem;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,40 @@
+.logementInfo {
+  line-height: 1rem;
+  &__title {
+    color: #ff6060;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 142.6%;
+    @media screen and (max-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+  &__location {
+    color: #ff6060;
+    font-size: 1.125rem;
+    font-weight: 500;
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
+  }
+  &__tagsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__tags {
+    color: white;
+    width: 11rem;
+    height: 2rem;
+    background-color: #ff6060;
+    border-radius: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      font-size: 0.625rem;
+    }
+  }
+}
