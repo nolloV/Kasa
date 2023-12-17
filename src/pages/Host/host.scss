@@ -1,0 +1,20 @@
+.collapseContainer {
+  align-items: flex-start;
+  display: flex;
+  gap: 4rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 15px;
+  }
+
+  &__elements {
+    flex: 1 1;
+    max-width: 50%;
+    display: flex;
+    @media (max-width: 768px) {
+      max-width: inherit;
+      width: 100%;
+    }
+  }
+}

@@ -2,26 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .aboutBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
-    width: 100%;
-    @media screen and (max-width: 768px) {
-      height: 8.9375rem;
-      padding: 0 0 1rem 0;
-    }
-    &__img {
-      border-radius: 1.5625rem;
+  padding: 2rem 0 1rem 0;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+  &__collapse {
+    width: 80%;
+    @media (max-width: 768px) {
       width: 100%;
-      height: 13.9375rem;
-      object-fit: cover;
-      filter: brightness(0.7);
-      @media screen and (max-width: 768px) {
-        height: 8.9375rem;
-        border-radius: 0.625rem;
-      }
     }
   }
 }

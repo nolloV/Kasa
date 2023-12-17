@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 5rem 0;
+  @media screen and (max-width: 768px) {
+    height: 6.9375rem;
+    padding: 0 0 1rem 0;
+  }
+  &__img {
+    position: absolute;
+    border-radius: 1.5625rem;
+    width: 90%;
+    height: 13.9375rem;
+    object-fit: cover;
+    filter: brightness(0.7);
+    @media screen and (max-width: 768px) {
+      height: 6.9375rem;
+      border-radius: 0.625rem;
+    }
+  }
+  &__text {
+    position: relative;
+    color: #fff;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+      width: 63%;
+      right: 3rem;
+    }
+  }
+}
