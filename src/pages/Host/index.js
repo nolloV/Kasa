@@ -35,14 +35,10 @@ function Host() {
       </div>
       <section className="collapseContainer">
         <div className="collapseContainer__elements">
-          <Collapse title="Description" description={logement.description} />
+          <Collapse title="Description" content={logement.description} />
         </div>
         <div className="collapseContainer__elements">
-          <Collapse
-            title="Équipements"
-            description={logement.equipments}
-            isEquipments
-          />
+          <Collapse title="Équipements" content={logement.equipments} />
         </div>
       </section>
     </div>

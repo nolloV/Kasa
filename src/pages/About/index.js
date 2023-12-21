@@ -12,11 +12,7 @@ const About = () => {
       <Banner imgSrc={aboutImg} altText="about banner" text="" />
       <div className="aboutContainer__collapse">
         {about.map((item, index) => (
-          <Collapse
-            key={index}
-            title={item.title}
-            description={item.description}
-          />
+          <Collapse key={index} title={item.title} content={item.description} />
         ))}
       </div>
     </section>

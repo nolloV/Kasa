@@ -7,8 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-free/css/all.css";
 
-// ...
-
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -17,7 +17,8 @@
     @media screen and (max-width: 768px) {
       width: 1.5rem;
       height: 1.5rem;
-      left: 3rem;
+      left: 2rem;
+      top: 14rem;
     }
   }
   &__next {
@@ -30,7 +31,8 @@
     @media screen and (max-width: 768px) {
       width: 1.5rem;
       height: 1.5rem;
-      right: 3rem;
+      right: 2rem;
+      top: 14rem;
     }
   }
   &__img {
@@ -39,6 +41,9 @@
     width: 100%;
     object-fit: cover;
     position: relative;
+    @media screen and (max-width: 768px) {
+      height: 16rem;
+    }
   }
   &__counter {
     color: white;
