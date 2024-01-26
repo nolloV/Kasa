@@ -1,55 +1,44 @@
 .carousel {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 3rem;
-  @media screen and (max-width: 768px) {
-    padding-bottom: 0;
-  }
 
   &__previous {
-    width: 2.9175rem;
-    height: 4.95rem;
+    width: 2.5em;
+    height: 4em;
     color: white;
     position: absolute;
-    left: 6rem;
-    bottom: 22rem;
-    @media screen and (max-width: 768px) {
-      width: 1.5rem;
-      height: 1.5rem;
-      left: 2rem;
-      top: 14rem;
-    }
+    left: 5%;
+    bottom: 40%;
   }
+
   &__next {
-    width: 2.9175rem;
-    height: 4.95rem;
+    width: 2.5em;
+    height: 4em;
     color: white;
     position: absolute;
-    right: 6rem;
-    bottom: 22rem;
-    @media screen and (max-width: 768px) {
-      width: 1.5rem;
-      height: 1.5rem;
-      right: 2rem;
-      top: 14rem;
-    }
+    right: 5%;
+    bottom: 40%;
   }
+
   &__img {
-    border-radius: 1.5625rem;
-    height: 26rem;
+    border-radius: 1.5625em;
+    height: 26em;
     width: 100%;
     object-fit: cover;
-    position: relative;
+
     @media screen and (max-width: 768px) {
-      height: 16rem;
+      height: 16em;
     }
   }
+
   &__counter {
     color: white;
     position: absolute;
-    bottom: 12rem;
-    font-size: 1.125rem;
+    bottom: 2em;
+    font-size: 1.125em;
     @media screen and (max-width: 768px) {
       display: none;
     }
